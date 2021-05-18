@@ -7,7 +7,8 @@
 title: 7ze
 email: shinudonney@tuta.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Make the web bloat free. Stop being a soy developer.
+  Reclaim the Internet. Make the web bloat free. Stop being a
+  soy developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: 7ze

@@ -7,4 +7,4 @@ in development
 
 ## License
 
-This is licensed under `GPL-3.0`.
+The site is licensed under [GPL-3.0](/LICENSE).
