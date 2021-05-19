@@ -4,11 +4,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 7ze
+author: Shinu Donney
+title: Reclaim the Internet.
+subtitle: Together, let's reclaim the Internet & make the web bloat free.
 email: shinudonney@tuta.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Reclaim the Internet. Make the web bloat free. Stop being a
-  soy developer.
+  "Reclaim the Internet. Make the web bloat free. Stop being a
+  soy developer."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: 7ze

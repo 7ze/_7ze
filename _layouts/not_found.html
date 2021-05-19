@@ -1,0 +1,29 @@
+---
+layout: post
+---
+
+<p>
+  Uh oh, looks like you're lost. Unfortunately, this page doesn't exist (anymore
+  / yet). While you're here, why don't you check out some of my posts below? It
+  may be fate.
+</p>
+
+<div>
+  <h3>Writing</h3>
+</div>
+<table>
+  <tbody>
+    {% for post in site.posts %}
+    <tr>
+      <td>
+        <time class="small" datetime="{{ post.date | date_to_xmlschema }}"
+          >{{ post.date | date: "%Y/%m/%d" }}</time
+        >
+      </td>
+      <td>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

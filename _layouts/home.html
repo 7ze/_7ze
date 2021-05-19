@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include about_preview.html %}
+
+<h3>Writing</h3>
+<table>
+  <tbody>
+    {% for post in site.posts %}
+    <tr>
+      <td>
+        <time class="small" datetime="{{ post.date | date_to_xmlschema }}"
+          >{{ post.date | date: "%Y/%m/%d" }}</time
+        >
+      </td>
+      <td>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <small style="color: #4f4f4f"> {{ post.subtitle }} </small>
+        <br />
+        <br />
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

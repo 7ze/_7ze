@@ -1,12 +1,12 @@
 ---
 layout: page
-title: about
+title: About
 permalink: /about/
 ---
 
 ## Hello, World
 
-I am a unix enthusiast, and a free and open source advocate.
+I am Shinu Donney, a unix enthusiast, and a free and open source advocate.
 
 ## About this blog
 

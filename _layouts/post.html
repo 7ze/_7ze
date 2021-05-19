@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div>
+  <h1>{{ page.title | escape }}</h1>
+  <div>
+    {% if page.date %}
+    <time datetime="{{ page.date | date_to_xmlschema }}"
+      >{{ page.date | date: "%B %-d, %Y" }}</time
+    >
+    {% endif %} {% if page.time_to_read %}
+    <span>{{ page.time_to_read }} minute read</span>
+    {% endif %}
+  </div>
+</div>
+
+<div>{{ content }}</div>
+
+{% if page.next or page.previous %}
+<div>
+  {% if page.previous.url %}
+  <div>
+    <div>
+      <a href="{{page.previous.url}}">{{ page.previous.title }}</a>
+    </div>
+    {% if page.previous.time_to_read %}
+    <time>{{ page.previous.time_to_read }} minute read</time>
+    {% endif %}
+  </div>
+  {% endif %} {% if page.next.url %}
+  <div>
+    <div>
+      <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+    </div>
+    {% if page.next.time_to_read %}
+    <time>{{ page.next.time_to_read }} minute read</time>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
