@@ -10,7 +10,7 @@ layout: default
     {% for post in site.posts %}
     <tr>
       <td>
-        <time class="small" datetime="{{ post.date | date_to_xmlschema }}"
+        <time datetime="{{ post.date | date_to_xmlschema }}"
           >{{ post.date | date: "%Y/%m/%d" }}</time
         >
       </td>
@@ -20,7 +20,7 @@ layout: default
     </tr>
     <tr>
       <td colspan="2">
-        <small style="color: #4f4f4f"> {{ post.subtitle }} </small>
+        <small> {{ post.subtitle }} </small>
         <br />
         <br />
       </td>

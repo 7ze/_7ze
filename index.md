@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Together, let's reclaim the Internet & make the web bloat free.
+title: Together, let's reclaim the Internet & make the web, bloat free.
 ---

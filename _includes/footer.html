@@ -1,18 +1,16 @@
 <footer id="footer">
-  <div style="width: 100%; background: #efefef; padding: 10px">
+  <div class="footer-wrapper">
+    <img class="logo" src="/assets/images/project.png" alt="project" />
     <br />
-    <img src="/assets/images/project.png" alt="project" />
-    {{ site.description }}
-    <br />
-    &copy; 2021, Shinu Donney.
-    <br />
+    <div><span class="copyleft">&copy;</span> 2021, Shinu Donney.</div>
+    <q class="quote"><em>{{ site.description }}</em></q>
     <br />
     <small
       ><a
         href="https://gitlab.com/7ze/7ze"
         target="_blank"
         rel="noopener noreferrer"
-        >source code</a
+        >Source Code</a
       ></small
     >
     <br />
@@ -21,20 +19,25 @@
       target="_blank"
       rel="noopener noreferrer"
     ></a>
+    <a
+      href="https://www.gnu.org/licenses/gpl-3.0.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      text-align:
+      right;
+      ><img
+        class="license"
+        src="/assets/images/gnu-gpl-3.png"
+        alt="GNU GPL-3 License"
+    /></a>
     <small>
-      <a
-        href="https://www.gnu.org/licenses/gpl-3.0.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img src="/assets/images/gnu-gpl-3.png" alt="GNU GPL-3 License"
-      /></a>
-      This site is licensed under
+      This work is licensed under a
       <a
         href="https://www.gnu.org/licenses/gpl-3.0.html"
         target="_blank"
         rel="noopener noreferrer"
         >GNU GPL-3 License</a
-      >
+      >.
     </small>
   </div>
 </footer>
