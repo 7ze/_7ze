@@ -2,6 +2,7 @@ $bg-primary: #181a1b;
 $accent: #202324;
 $text-primary: #d8d4cf;
 $text-links: #7ca1d8;
+$headings: #91bbfa;
 
 body {
   background: $bg-primary;
@@ -30,6 +31,24 @@ a {
   margin: 0 auto;
 }
 
+h3 {
+  color: $headings;
+  font-size: 1.25em;
+}
+
+p {
+  opacity: 0.95;
+}
+
+/* @about_preview */
+
+.about-preview {
+  margin: 1.5em 0;
+  p {
+    padding: 0.5em 0;
+  }
+}
+
 /* @header */
 
 header {
@@ -53,6 +72,21 @@ header {
   opacity: 0.9;
 }
 
+/* @writing */
+
+.writing {
+  margin: 1.5em 0 3em;
+
+  time {
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+
+  .post-item {
+    padding: 1em 0;
+  }
+}
+
 /* @footer */
 
 footer {
@@ -72,11 +106,6 @@ footer {
     padding: 10px;
     border: 1px dashed #d8d4cf59;
     border-radius: 3px;
-  }
-
-  img.license {
-    width: 60px;
-    margin-bottom: 0.7em;
   }
 
   div.footer-wrapper {

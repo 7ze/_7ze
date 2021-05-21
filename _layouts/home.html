@@ -4,27 +4,19 @@ layout: default
 
 {% include about_preview.html %}
 
-<h3>Writing</h3>
-<table>
-  <tbody>
-    {% for post in site.posts %}
-    <tr>
-      <td>
-        <time datetime="{{ post.date | date_to_xmlschema }}"
-          >{{ post.date | date: "%Y/%m/%d" }}</time
-        >
-      </td>
-      <td>
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <small> {{ post.subtitle }} </small>
-        <br />
-        <br />
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="writing">
+  <h3>Writing</h3>
+  {% for post in site.posts %}
+  <div class="post-item">
+    <div>
+      <a href="{{ post.url | relative_url }}"
+        ><h4 class="post-title">{{ post.title | escape }}</h4></a
+      >
+      <time datetime="{{ post.date | date_to_xmlschema }}"
+        >{{ post.date | date: "%Y/%m/%d" }}</time
+      >
+    </div>
+    <small class="post-subtitle"> {{ post.subtitle }} </small>
+  </div>
+  {% endfor %}
+</div>
