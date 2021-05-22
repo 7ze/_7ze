@@ -21,3 +21,4 @@ plugins:
   - jekyll-feed
 sass:
   style: compact
+highlighter: rouge

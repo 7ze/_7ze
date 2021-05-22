@@ -31,13 +31,25 @@ a {
   margin: 0 auto;
 }
 
-h3 {
+h1,
+h2 {
   color: $headings;
   font-size: 1.25em;
 }
 
+h3 {
+  color: $headings;
+  font-size: 1em;
+}
+
 p {
   opacity: 0.95;
+}
+
+time,
+.time-taken {
+  font-size: 0.8em;
+  opacity: 0.8;
 }
 
 /* @about_preview */
@@ -77,14 +89,62 @@ header {
 .writing {
   margin: 1.5em 0 3em;
 
-  time {
-    font-size: 0.8em;
-    opacity: 0.8;
-  }
-
   .post-item {
     padding: 1em 0;
   }
+}
+
+/* @about_page */
+
+.about-content {
+  margin-bottom: 3em;
+
+  h2 {
+    font-size: 1.15em;
+    margin: 1.1em 0 0.5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+    opacity: 0.9;
+  }
+}
+
+/* @post_page */
+
+.post-date-time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.post-heading {
+  margin-bottom: 2em;
+}
+
+.post-content-box {
+  margin-bottom: 2em;
+
+  p {
+    opacity: 0.8;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+  }
+
+  li {
+    font-size: 0.95em;
+    margin-bottom: 1em;
+  }
+}
+
+.post-suggestions {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  display: flex;
 }
 
 /* @footer */

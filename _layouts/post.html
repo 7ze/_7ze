@@ -2,25 +2,25 @@
 layout: default
 ---
 
-<div>
-  <h1>{{ page.title | escape }}</h1>
-  <div>
+<div class="post-heading">
+  <h2>{{ page.title | escape }}</h2>
+  <div class="post-date-time">
     {% if page.date %}
     <time datetime="{{ page.date | date_to_xmlschema }}"
       >{{ page.date | date: "%B %-d, %Y" }}</time
     >
     {% endif %} {% if page.time_to_read %}
-    <span>{{ page.time_to_read }} minute read</span>
+    <span class="time-taken">{{ page.time_to_read }} minute read</span>
     {% endif %}
   </div>
 </div>
 
-<div>{{ content }}</div>
+<div class="post-content-box">{{ content }}</div>
 
 {% if page.next or page.previous %}
-<div>
+<div class="post-suggestions">
   {% if page.previous.url %}
-  <div>
+  <div class="previous-post">
     <div>
       <a href="{{page.previous.url}}">{{ page.previous.title }}</a>
     </div>
@@ -29,7 +29,7 @@ layout: default
     {% endif %}
   </div>
   {% endif %} {% if page.next.url %}
-  <div>
+  <div class="next-post">
     <div>
       <a href="{{ page.next.url }}">{{ page.next.title }}</a>
     </div>
