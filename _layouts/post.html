@@ -23,19 +23,21 @@ layout: default
   <div class="previous-post">
     <div>
       <a href="{{page.previous.url}}">{{ page.previous.title }}</a>
+      {% if page.previous.time_to_read %}
+      <br />
+      <time>{{ page.previous.time_to_read }} minute read</time>
+      {% endif %}
     </div>
-    {% if page.previous.time_to_read %}
-    <time>{{ page.previous.time_to_read }} minute read</time>
-    {% endif %}
   </div>
   {% endif %} {% if page.next.url %}
   <div class="next-post">
     <div>
       <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      {% if page.next.time_to_read %}
+      <br />
+      <time>{{ page.next.time_to_read }} minute read</time>
+      {% endif %}
     </div>
-    {% if page.next.time_to_read %}
-    <time>{{ page.next.time_to_read }} minute read</time>
-    {% endif %}
   </div>
   {% endif %}
 </div>
